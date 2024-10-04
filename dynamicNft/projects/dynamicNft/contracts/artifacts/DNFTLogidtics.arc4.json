@@ -1,0 +1,300 @@
+{
+  "name": "DNFTLogidtics",
+  "desc": "",
+  "methods": [
+    {
+      "name": "createApplication",
+      "args": [
+        {
+          "name": "_name",
+          "type": "string"
+        },
+        {
+          "name": "_symbol",
+          "type": "string"
+        }
+      ],
+      "returns": {
+        "type": "void"
+      }
+    },
+    {
+      "name": "nft_ownerOf",
+      "args": [
+        {
+          "name": "_tokenId",
+          "type": "uint64"
+        }
+      ],
+      "returns": {
+        "type": "address"
+      }
+    },
+    {
+      "name": "nft_uri",
+      "args": [
+        {
+          "name": "_tokenId",
+          "type": "uint64"
+        }
+      ],
+      "returns": {
+        "type": "string"
+      }
+    },
+    {
+      "name": "nft_Image",
+      "args": [
+        {
+          "name": "_tokenId",
+          "type": "uint64"
+        }
+      ],
+      "returns": {
+        "type": "string"
+      }
+    },
+    {
+      "name": "nft_totalSupply",
+      "args": [],
+      "returns": {
+        "type": "uint64"
+      }
+    },
+    {
+      "name": "nft_getApproved",
+      "args": [
+        {
+          "name": "_tokenId",
+          "type": "uint64"
+        }
+      ],
+      "returns": {
+        "type": "address"
+      }
+    },
+    {
+      "name": "nft_isApprovedForAll",
+      "args": [
+        {
+          "name": "_owner",
+          "type": "address"
+        },
+        {
+          "name": "_operator",
+          "type": "address"
+        }
+      ],
+      "returns": {
+        "type": "bool"
+      }
+    },
+    {
+      "name": "nft_balaceOf",
+      "args": [
+        {
+          "name": "_owner",
+          "type": "address"
+        }
+      ],
+      "returns": {
+        "type": "uint64"
+      }
+    },
+    {
+      "name": "nft_getAllTokenNftIds",
+      "args": [
+        {
+          "name": "_owner",
+          "type": "address"
+        }
+      ],
+      "returns": {
+        "type": "uint64[]"
+      }
+    },
+    {
+      "name": "nft_getTokenDetails",
+      "args": [
+        {
+          "name": "_tokenId",
+          "type": "uint64"
+        }
+      ],
+      "returns": {
+        "type": "(address,string,string,address)"
+      }
+    },
+    {
+      "name": "nft_approve",
+      "args": [
+        {
+          "name": "_approved",
+          "type": "address"
+        },
+        {
+          "name": "_tokenId",
+          "type": "uint64"
+        }
+      ],
+      "returns": {
+        "type": "void"
+      }
+    },
+    {
+      "name": "nft_setApprovalForAll",
+      "args": [
+        {
+          "name": "_operator",
+          "type": "address"
+        },
+        {
+          "name": "_approved",
+          "type": "bool"
+        }
+      ],
+      "returns": {
+        "type": "void"
+      }
+    },
+    {
+      "name": "nft_upgradeUri",
+      "args": [
+        {
+          "name": "_tokenUri",
+          "type": "string"
+        },
+        {
+          "name": "_tokenId",
+          "type": "uint64"
+        }
+      ],
+      "returns": {
+        "type": "void"
+      }
+    },
+    {
+      "name": "nft_trasferFrom",
+      "args": [
+        {
+          "name": "_from",
+          "type": "address"
+        },
+        {
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "name": "_tokenId",
+          "type": "uint64"
+        }
+      ],
+      "returns": {
+        "type": "void"
+      }
+    },
+    {
+      "name": "mint",
+      "args": [
+        {
+          "name": "_image",
+          "type": "string"
+        },
+        {
+          "name": "_tokenUri",
+          "type": "string"
+        },
+        {
+          "name": "_to",
+          "type": "address"
+        }
+      ],
+      "returns": {
+        "type": "void"
+      }
+    },
+    {
+      "name": "registerCompany",
+      "args": [
+        {
+          "name": "_companyAddress",
+          "type": "address"
+        }
+      ],
+      "returns": {
+        "type": "void"
+      }
+    },
+    {
+      "name": "createParcel",
+      "args": [
+        {
+          "name": "_image",
+          "type": "string"
+        },
+        {
+          "name": "_tokenUri",
+          "type": "string"
+        },
+        {
+          "name": "_initialLocation",
+          "type": "string"
+        },
+        {
+          "name": "_status",
+          "type": "string"
+        },
+        {
+          "name": "_lastUpdated",
+          "type": "uint64"
+        }
+      ],
+      "returns": {
+        "type": "void"
+      }
+    },
+    {
+      "name": "updateParcel",
+      "args": [
+        {
+          "name": "_tokenId",
+          "type": "uint64"
+        },
+        {
+          "name": "_currentLocation",
+          "type": "string"
+        },
+        {
+          "name": "_status",
+          "type": "string"
+        },
+        {
+          "name": "_lastUpdated",
+          "type": "uint64"
+        }
+      ],
+      "returns": {
+        "type": "void"
+      }
+    },
+    {
+      "name": "getParcelDetails",
+      "args": [
+        {
+          "name": "_tokenId",
+          "type": "uint64"
+        }
+      ],
+      "returns": {
+        "type": "(string,string,uint64)"
+      }
+    },
+    {
+      "name": "getAppCreatorAddress",
+      "args": [],
+      "returns": {
+        "type": "address"
+      }
+    }
+  ]
+}

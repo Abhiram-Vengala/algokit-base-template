@@ -1,4 +1,4 @@
-# {{ project_name }}
+# dynamicNft
 
 Welcome to your new AlgoKit project!
 
